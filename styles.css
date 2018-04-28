@@ -1,0 +1,151 @@
+@import url("reset.css");
+body {
+    position: relative;
+    /* min-width: 800px; */
+    height: 100vh;
+    font-family: arial, sans-serif;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 300px;
+    margin: 0 30px;
+}
+
+header nav ul li {
+    margin-top: 15px;
+    vertical-align: middle;
+}
+
+header nav ul li a {
+    color: #222;
+    display: inline-block;
+    min-width: 55px;
+}
+
+a img {
+    opacity: 0.7;
+}
+
+a img:hover {
+    opacity: 1;
+}
+
+#user {
+    padding: 0;
+    position: relative;
+}
+
+#userbg {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: darkmagenta;
+}
+
+#username {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+}
+
+#main {
+    display: flex;
+    align-content: center;
+}
+
+#main div {
+    margin: auto 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, 50%); */
+    transform: translateX(-50%) translateY(50%);
+    text-align: center;
+}
+
+#main div>* {
+    display: block;
+}
+
+#main img {
+    margin: 35px auto;
+}
+
+form {
+    width: 100%;
+}
+
+form input {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 3px 3px 8px 0 rgba(0, 0, 0, 0.03);
+    width: 500px;
+    height: 40px;
+    border: 1px #ddd solid;
+}
+
+form input:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 3px 3px 8px 0 rgba(0, 0, 0, 0.10);
+    transition-duration: 200ms;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border: 1px #f2f2f2 solid;
+    margin: 30px 5px;
+    color: #777;
+    font-weight: 600;
+}
+
+form button:hover {
+    border: 1px #ccc solid;
+    color: #222;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    color: #777;
+}
+
+footer section {
+    height: 0px;
+    padding: 30px 0;
+    background-color: #f2f2f2;
+    border-top: 1px #e4e4e4 solid;
+}
+
+footer section p,
+footer section nav {
+    padding: 0 30px;
+}
+
+#ft-left {
+    float: left;
+}
+
+#ft-right {
+    float: right;
+}
